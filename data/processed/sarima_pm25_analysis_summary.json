@@ -1,0 +1,28 @@
+{
+  "station": "Aotizhongxin",
+  "best_order_non_seasonal": [
+    1,
+    0,
+    3
+  ],
+  "seasonal_order": [
+    1,
+    1,
+    0,
+    24
+  ],
+  "sarima_rmse": 297.73871459479966,
+  "sarima_mae": 271.0449615608163,
+  "diagnostics": {
+    "n": 35064,
+    "missing_ratio": 0.0,
+    "min": 3.0,
+    "max": 898.0,
+    "mean": 82.54062286105408,
+    "std": 81.95640129983182,
+    "adf_pvalue": 0.0,
+    "kpss_pvalue": 0.1,
+    "autocorr_lag_24": 0.40157518039673323,
+    "autocorr_lag_168": 0.016796754924567902
+  }
+}
