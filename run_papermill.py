@@ -65,10 +65,12 @@ pm.execute_notebook(
 )
 
 # --- NEW: Time-series forecasting with ARIMA only ---
+# --- NEW: Time-series forecasting với SARIMA (Chủ đề 2) ---
 pm.execute_notebook(
     "notebooks/arima_forecasting.ipynb",
     "notebooks/runs/arima_forecasting_run.ipynb",
     parameters=dict(
+        # Đảm bảo các key này khớp 100% với cell tag 'parameters' trong notebook
         RAW_ZIP_PATH="data/raw/PRSA2017_Data_20130301-20170228.zip",
         STATION="Aotizhongxin",
         VALUE_COL="PM2.5",
@@ -77,7 +79,7 @@ pm.execute_notebook(
         Q_MAX=3,
         D_MAX=2,
         IC="aic",
-        ARTIFACTS_PREFIX="arima_pm25",
+        ARTIFACTS_PREFIX="sarima_pm25_analysis" # Đổi tên để phân biệt với ARIMA cũ
     ),
     language="python",
     kernel_name=KERNEL,
